@@ -21,6 +21,7 @@ li {
 a {
     font-size: larger;
     font-weight: bolder;
+    color: rgb(237, 28, 36);
     text-decoration: none;
 }
 
@@ -28,9 +29,41 @@ h1 {
     text-align: center;
 }
 
+h3 {
+    padding-right: 2%;
+}
+
 p {
+    font-size: 150%;
+    margin: 0;
+    padding-left: 10%;
+    line-height: 1.5;
+}
+
+.p_about {
+    display: flex;
+    justify-content: space-around;
     padding-left: 10%;
     padding-right: 10%;
+}
+
+.thumbnail_about {
+    width: 15em;
+    height: auto;
+    padding-right: -10%;
+}
+
+.social {
+    padding-top: 5%;
+    display: flex;
+    justify-content: right;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.social_icon {
+    width: 2.5em;
+    height: auto;
 }
 
 h2 {
@@ -63,6 +96,11 @@ h2 {
 .thumbnail {
     width: 35em;
     height: auto;
+    border: 10px rgb(0, 165, 80) solid;
+}
+
+.thumbnail:nth-last-of-type(even) {
+    border-color: rgb(0, 173, 239);
 }
 
 .logo {
@@ -81,11 +119,6 @@ body {
     background-color: whitesmoke;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-p {
-    font-size: larger;
-}
-
 
 .animation {
     width: 50em;
@@ -130,23 +163,4 @@ p {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-}
-
-.fog_combined {
-    max-width: 100%;
-    max-height: 100%;
-    z-index: 1;
-    margin-left: -15%;
-    margin-right: -15%;
-    overflow: hidden;
-    position: relative;
-}
-
-.fog {
-    width: 100%;
-    height: 100%;
-    background-image: url(art/fog-1.png);
-    background-position: center;
-    background-repeat: repeat-x;
-    background-size: cover;
 }
