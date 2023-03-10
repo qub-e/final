@@ -144,19 +144,34 @@ body {
     filter: drop-shadow(0 0 0.75rem crimson);
     animation-name: rotate;
     animation-duration: .5s;
+    animation-fill-mode: forwards;
 }
 
 .art:nth-child(odd) {
     transform: rotate(-7deg);
 }
 
+.art:hover:nth-child(odd) {
+    animation-name: rotate_odd;
+}
+
 @keyframes rotate {
     from {
-        transform: rotate(0);
+        transform: rotate(5deg);
     }
 
     to {
-        transform: rotate(7);
+        transform: rotate(0);
+    }
+}
+
+@keyframes rotate_odd {
+    from {
+        transform: rotate(-7deg);
+    }
+
+    to {
+        transform: rotate(0);
     }
 }
 
