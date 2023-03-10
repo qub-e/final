@@ -51,12 +51,13 @@ p {
 .thumbnail_about {
     width: 15em;
     height: auto;
+    border: 10px rgb(0, 173, 239) solid;
 }
 
 .social {
     padding-top: 5%;
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -64,7 +65,6 @@ p {
 .social_icon {
     width: 2.5em;
     height: auto;
-
 }
 
 h2 {
@@ -98,10 +98,6 @@ h2 {
     width: 35em;
     height: auto;
     border: 10px rgb(0, 165, 80) solid;
-}
-
-.thumbnail:nth-last-of-type(even) {
-    border-color: rgb(0, 173, 239);
 }
 
 .logo {
